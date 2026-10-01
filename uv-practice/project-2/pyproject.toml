@@ -1,0 +1,19 @@
+[project]
+name = "project-2"
+version = "0.1.0"
+description = "Google Cloud practice project"
+readme = "README.md"
+authors = [
+    { name = "jpd5kh", email = "jpd5kh@virginia.edu" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "google-cloud-pubsub==2.40.0",
+]
+
+[project.scripts]
+project-2 = "project_2:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
